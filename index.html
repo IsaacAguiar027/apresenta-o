@@ -6,58 +6,52 @@
     <title>Automação n8n - Deixe a IA trabalhar por voçê</title>
     <link rel="stylesheet" href="dist/style/tailwind.css">
 <body>
-    <div class="relative h-screen snap-y snap-mandatory overflow-y-scroll">
-        <div class="grid grid-cols-2  h-screen snap-start sticky top-0 bg-neutral-900">
-            <div class="flex flex-col  pl-32 pt-60 text-white overflow-hidden">
-                <h1 class="text-8xl font-bold mb-8">Automação n8n</h1>
-                <p class="mb-6 text-4xl text-pink-600"> Deixe a IA trabalhar por voçê</p>
-            </div>
-            <div class="h-screen overflow-hidden">
-                <img class="max-w-screen w-full" src="src/images/rob.png" alt="Imagem de um robô olhando para baixo">
-            </div>
+   <div class="relative h-screen snap-y snap-mandatory overflow-y-scroll">
+    <!-- SEÇÃO 1: Automação n8n -->
+    <div class="grid grid-cols-1 md:grid-cols-2 h-screen snap-start sticky top-0 bg-neutral-900">
+        <div class="flex flex-col pl-8 pt-20 pr-8 text-white overflow-hidden md:pl-32 md:pt-60">
+            <h1 class="text-5xl sm:text-6xl md:text-8xl font-bold mb-4 md:mb-8">Automação n8n</h1>
+            <p class="text-xl sm:text-2xl md:text-4xl text-pink-600">Deixe a IA trabalhar por você</p>
         </div>
-        <div class="flex flex-col pt-50 items-center h-screen snap-start sticky top-0 text-white bg-neutral-900">
-            <div class="p-15">
-                <h1 class="text-5xl font-bold"><span class="text-pink-600 text-8xl">"</span>Não tenha medo de falhar, <br> tenha medo de não tentar<span class="text-pink-600 text-6xl">"</span></h1>
-            </div>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam iure aliquam laborum saepe nisi odit recusandae minima unde asperiores? <br> Rem itaque a tempore facere provident. Perferendis id libero facilis ipsum.
-            </p>
-        </div>
-        <div class="grid grid-cols-2 h-screen snap-start sticky top-0 bg-white">
-            <div class="pt-30 pl-50">
-                <h2 class="text-pink-700 text-7xl font-black">Índice</h2>
-                <ul>
-                    <li class="pb-5 pt-10">
-                        <p class="text-2xl font-mono text-pink-900">4.  SOBRE NÓS</p>
-                    </li>
-                    <li class="pb-5">
-                        <P class="text-2xl font-mono text-pink-900">5.  MISSÃO, VISÃO E VALORES</P>
-                    </li>
-                    <li class="pb-5">
-                        <P class="text-2xl font-mono text-pink-900">6.  PORTFOLIO</P>
-                    </li>
-                    <li class="pb-5">
-                        <P class="text-2xl font-mono text-pink-900">7.  O QUE DIZEM</P>
-                    </li>
-                    <li class="pb-5">
-                        <P class="text-2xl font-mono text-pink-900">8.  RESULTADOS</P>
-                    </li>
-                    <li class="pb-5">
-                        <P class="text-2xl font-mono text-pink-900">9.  SERVIÇOS</P>
-                    </li>
-                    <li class="pb-5">
-                        <P class="text-2xl font-mono text-pink-900">10. INVESTIMENTO</P>
-                    </li>
-                    <li>
-                        <P class="text-2xl font-mono text-pink-900">11. CONTATO</P>
-                    </li>
-                </ul>
-            </div>
-            <div class="h-screen overflow-hidden">
-                <img src="src/images/robo2.png" alt="Imagem de robô olhando para cima">
-            </div>
+        <div class="h-64 sm:h-80 md:h-screen overflow-hidden">
+            <img class="w-full h-full object-cover md:object-contain" src="src/images/rob.png" alt="Imagem de um robô olhando para baixo">
         </div>
     </div>
+
+    <!-- SEÇÃO 2: Citação -->
+    <div class="flex flex-col items-center justify-center h-screen snap-start sticky top-0 text-white bg-neutral-900 px-6 sm:px-12 md:px-0">
+        <div class="max-w-4xl text-center">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+                <span class="text-pink-600 text-5xl sm:text-6xl md:text-8xl">"</span>
+                Não tenha medo de falhar, <br class="hidden sm:block"> tenha medo de não tentar
+                <span class="text-pink-600 text-4xl sm:text-5xl md:text-6xl">"</span>
+            </h1>
+            <p class="mt-6 text-sm sm:text-base md:text-lg leading-relaxed">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam iure aliquam laborum saepe nisi odit recusandae minima unde asperiores? <br class="hidden md:block">
+                Rem itaque a tempore facere provident. Perferendis id libero facilis ipsum.
+            </p>
+        </div>
+    </div>
+
+    <!-- SEÇÃO 3: Índice -->
+    <div class="grid grid-cols-1 md:grid-cols-2 h-screen snap-start sticky top-0 bg-white">
+        <div class="pt-12 pl-6 pr-6 sm:pl-12 md:pt-30 md:pl-50">
+            <h2 class="text-5xl sm:text-6xl md:text-7xl font-black text-pink-700">Índice</h2>
+            <ul class="mt-6 space-y-3 sm:space-y-4">
+                <li><p class="text-lg sm:text-xl md:text-2xl font-mono text-pink-900">4. SOBRE NÓS</p></li>
+                <li><p class="text-lg sm:text-xl md:text-2xl font-mono text-pink-900">5. MISSÃO, VISÃO E VALORES</p></li>
+                <li><p class="text-lg sm:text-xl md:text-2xl font-mono text-pink-900">6. PORTFÓLIO</p></li>
+                <li><p class="text-lg sm:text-xl md:text-2xl font-mono text-pink-900">7. O QUE DIZEM</p></li>
+                <li><p class="text-lg sm:text-xl md:text-2xl font-mono text-pink-900">8. RESULTADOS</p></li>
+                <li><p class="text-lg sm:text-xl md:text-2xl font-mono text-pink-900">9. SERVIÇOS</p></li>
+                <li><p class="text-lg sm:text-xl md:text-2xl font-mono text-pink-900">10. INVESTIMENTO</p></li>
+                <li><p class="text-lg sm:text-xl md:text-2xl font-mono text-pink-900">11. CONTATO</p></li>
+            </ul>
+        </div>
+        <div class="h-64 sm:h-80 md:h-screen overflow-hidden">
+            <img src="src/images/robo2.png" alt="Imagem de robô olhando para cima" class="w-full h-full object-cover md:object-contain">
+        </div>
+    </div>
+</div>
 </body>
 </html>
