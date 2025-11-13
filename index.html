@@ -7,57 +7,89 @@
     <link rel="stylesheet" href="dist/style/tailwind.css">
 <body>
     <div class="relative h-screen snap-y snap-mandatory overflow-y-scroll">
-        <div class="grid grid-cols-2  h-screen snap-start sticky top-0 bg-neutral-900">
-            <div class="flex flex-col  pl-32 pt-60 text-white overflow-hidden">
-                <h1 class="text-8xl font-bold mb-8">Automação n8n</h1>
-                <p class="mb-6 text-4xl text-pink-600"> Deixe a IA trabalhar por voçê</p>
+        <!-- Seção 1 -->
+        <div class="md:grid grid-cols-2 h-screen sticky top-0 bg-neutral-900">
+            <!-- Texto -->
+            <div class="md:relative z-10 flex flex-col px-6 md:pl-32 pt-20 md:pt-40 text-white overflow-hidden text-center md:text-left">
+                <h1 class="text-4xl sm:text-5xl md:text-8xl font-bold mb-6 sm:mb-8 bg-black/50 ">Automação n8n</h1>
+                <p class="mb-5 text-2xl sm:text-3xl md:text-4xl text-pink-600 bg-black/70">Deixe a IA trabalhar por você</p>
             </div>
-            <div class="h-screen overflow-hidden">
-                <img class="max-w-screen w-full" src="src/images/rob.png" alt="Imagem de um robô olhando para baixo">
+            <!-- Imagem -->
+            <div class="h-80 sm:h-96 md:h-screen flex items-center justify-center">
+                <img class="w-full md:max-w-screen" src="src/images/rob.png" alt="Imagem de um robô olhando para baixo">
             </div>
         </div>
-        <div class="flex flex-col pt-50 items-center h-screen snap-start sticky top-0 text-white bg-neutral-900">
-            <div class="p-15">
-                <h1 class="text-5xl font-bold"><span class="text-pink-600 text-8xl">"</span>Não tenha medo de falhar, <br> tenha medo de não tentar<span class="text-pink-600 text-6xl">"</span></h1>
+
+        <!-- Seção 2 -->
+        <div class="flex flex-col pt-30  items-center h-screen  sticky top-0 text-white bg-neutral-900 px-4 text-center">
+            <div class="p-4 sm:p-10">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+                    <span class="text-pink-600 text-5xl sm:text-6xl md:text-8xl">"</span>
+                    Não tenha medo de falhar, <br class="hidden sm:block"> tenha medo de não tentar
+                    <span class="text-pink-600 text-4xl sm:text-5xl md:text-6xl">"</span>
+                </h1>
             </div>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam iure aliquam laborum saepe nisi odit recusandae minima unde asperiores? <br> Rem itaque a tempore facere provident. Perferendis id libero facilis ipsum.
+            <p class="text-sm sm:text-base md:text-lg max-w-2xl">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam iure aliquam laborum saepe nisi odit recusandae minima unde asperiores? <br class="hidden sm:block"> 
+                Rem itaque a tempore facere provident. Perferendis id libero facilis ipsum.
             </p>
         </div>
-        <div class="grid grid-cols-2 h-screen snap-start sticky top-0 bg-white">
-            <div class="pt-30 pl-50">
-                <h2 class="text-pink-700 text-7xl font-black">Índice</h2>
+
+        <!-- Seção 3 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 h-auto md:h-screen sticky top-0 bg-white">
+            <!-- Índice -->
+            <div class="relative z-10 pt-16 sm:pt-24 md:pt-20 px-6 md:pl-50 text-center md:text-left">
+                <h2 class="text-pink-700 text-4xl sm:text-5xl md:text-7xl font-black mb-6">Índice</h2>
                 <ul>
-                    <li class="pb-5 pt-10">
-                        <p class="text-2xl font-mono text-pink-900">4.  SOBRE NÓS</p>
+                    <li class="mb-4 sm:pb-5 pt-6 sm:pt-10">
+                        <a href="#">
+                            <p class="text-lg sm:text-xl md:text-2xl font-mono text-pink-900 hover:text-blue-800">4. SOBRE NÓS</p>
+                        </a>
                     </li>
-                    <li class="pb-5">
-                        <P class="text-2xl font-mono text-pink-900">5.  MISSÃO, VISÃO E VALORES</P>
+                    <li class="mb-4">
+                        <a href="#">
+                            <p class="text-lg sm:text-xl md:text-2xl font-mono text-pink-900 hover:text-blue-800">5. MISSÃO, VISÃO E VALORES</p>
+                        </a>
                     </li>
-                    <li class="pb-5">
-                        <P class="text-2xl font-mono text-pink-900">6.  PORTFOLIO</P>
+                    <li class="mb-4">
+                        <a href="#">
+                            <p class="text-lg sm:text-xl md:text-2xl font-mono text-pink-900 hover:text-blue-800">6. PORTFOLIO</p>
+                        </a>
                     </li>
-                    <li class="pb-5">
-                        <P class="text-2xl font-mono text-pink-900">7.  O QUE DIZEM</P>
+                    <li class="mb-4">
+                        <a href="#">
+                            <p class="text-lg sm:text-xl md:text-2xl font-mono text-pink-900 hover:text-blue-800">7. O QUE DIZEM</p>
+                        </a>
                     </li>
-                    <li class="pb-5">
-                        <P class="text-2xl font-mono text-pink-900">8.  RESULTADOS</P>
+                    <li class="mb-4">
+                        <a href="#">
+                            <p class="text-lg sm:text-xl md:text-2xl font-mono text-pink-900 hover:text-blue-800">8. RESULTADOS</p>
+                        </a>
                     </li>
-                    <li class="pb-5">
-                        <P class="text-2xl font-mono text-pink-900">9.  SERVIÇOS</P>
+                    <li class="mb-4">
+                        <a href="#">
+                            <p class="text-lg sm:text-xl md:text-2xl font-mono text-pink-900 hover:text-blue-800">9. SERVIÇOS</p>
+                        </a>
                     </li>
-                    <li class="pb-5">
-                        <P class="text-2xl font-mono text-pink-900">10. INVESTIMENTO</P>
+                    <li class="mb-4">
+                        <a href="#">
+                            <p class="text-lg sm:text-xl md:text-2xl font-mono text-pink-900 hover:text-blue-800">10. INVESTIMENTO</p>
+                        </a>
                     </li>
                     <li>
-                        <P class="text-2xl font-mono text-pink-900">11. CONTATO</P>
+                        <a href="#">
+                            <p class="text-lg sm:text-xl md:text-2xl font-mono text-pink-900 hover:text-blue-800">11. CONTATO</p>
+                        </a>
                     </li>
                 </ul>
             </div>
-            <div class="h-screen overflow-hidden">
-                <img src="src/images/robo2.png" alt="Imagem de robô olhando para cima">
+
+            <!-- Imagem -->
+            <div class="h-64 sm:h-80 md:h-screen md:overflow-hidden flex items-center justify-center">
+                <img class="w-full md:max-w-screen" src="src/images/robo2.png" alt="Imagem de robô olhando para cima">
             </div>
         </div>
     </div>
+
 </body>
 </html>
